@@ -1,4 +1,6 @@
 import time
+import os
+import winsound
 timestamp=time.strftime('%H:%M:%S')
 print(timestamp)
 
@@ -19,3 +21,13 @@ elif(timestamp1>='16' and timestamp1<'20'):
     print("Good Evening")
 else:
     print("Good Night")
+
+while True:
+    timestamp = time.strftime('%H:%M:%S')
+    print(timestamp)
+    time.sleep(1)
+    if(timestamp=='02:29:50'):
+        # os.system('echo "\a"')
+        frequency = 200
+        duration = 1000*10
+        winsound.Beep(frequency, duration)
