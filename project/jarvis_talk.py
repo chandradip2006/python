@@ -51,6 +51,7 @@ def speak_old(text):
 #         {"role": "system", "content": "You are a virtual assistant named jarvis skilled in general tasks like Alexa and Google Cloud. Give short responses please"},
 #         {"role": "user", "content": command}
 #     ]
+
 #     )
 
 #     return completion.choices[0].message.content
@@ -67,7 +68,7 @@ def processCommand(c):
     elif "open google" in c.lower():
         webbrowser.open("https://hello.iitk.ac.in/user/login")
         pyautogui.click(1099, 480)
-        time.sleep(1) 
+        time.sleep(0.25) 
         pyautogui.press('y')
         pyautogui.press('o')
         pyautogui.press('u')
@@ -82,28 +83,28 @@ def processCommand(c):
         pyautogui.press('D')
 
          # Wait for 1 second to ensure the click is registered
-        time.sleep(1)
+        time.sleep(0.25)
         pyautogui.click(1522,317)
         # Step 6: Paste the text
         # pyautogui.hotkey('ctrl', 'v')
         # time.sleep(1)  # Wait for 1 second to ensure the paste command is completed
 
         pyperclip.copy("your password")
-        time.sleep(1)
+        time.sleep(0.25)
 
         pyautogui.click(1159, 619)
-        time.sleep(1)
+        time.sleep(0.25)
         pyautogui.hotkey('ctrl', 'v')
-        time.sleep(1)
+        time.sleep(0.25)
         # Step 7: Press Enter
         pyautogui.press('enter')
     elif "lock" in c.lower():
         pyautogui.click(46, 1047)
-        time.sleep(0.1)
+        time.sleep(0.25)
         pyautogui.click(733, 963)
-        time.sleep(0.1)
+        time.sleep(0.25)
         pyautogui.click(712, 793)
-        time.sleep(0.1)
+        time.sleep(0.25)
         pyautogui.click(712, 793)
         # Step 5: Click at coordinates (1808, 1328)
         # pyautogui.hotkey('Windows', 'l')

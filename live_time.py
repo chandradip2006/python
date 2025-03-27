@@ -22,7 +22,7 @@ elif(timestamp1>='16' and timestamp1<'20'):
     print("Good Evening")
 else:
     print("Good Night")
-z=52
+z=7
 while True:
     timestamp = time.strftime('%H:%M:%S')
     print(timestamp)
@@ -42,3 +42,6 @@ while True:
         if(ch=='S'):
             pygame.mixer.music.stop()
             z=z+1;
+        elif(ch=='F'):
+            pygame.mixer.music.stop()
+            break;
