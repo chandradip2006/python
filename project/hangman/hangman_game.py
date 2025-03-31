@@ -1,7 +1,8 @@
 import random
 from database import words
 print("Let's play Hangman!!")
-chance=6
+chance= int(input("no of chances you want to play with: "))
+# chance=6
 print(f"You have only {chance} lives so try to guess the word within {chance} attempts! Good luck")
 
 
