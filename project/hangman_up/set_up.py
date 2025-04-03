@@ -19,11 +19,11 @@ chance= int(input("no of chances you want to play with: "))
 # chance=6
 print(f"You have only {chance} lives so try to guess the word within {chance} attempts! Good luck")
 print("-----------------------------------------------------------------------")
-count1=0;
 list1=list(word)
 list3=[]
 while True:
     print(list2)
+    count1=0;
     print(f"life remaining: {chance}")
     char = input("guess a letter: ")
     if char in list3:
@@ -45,7 +45,7 @@ while True:
         if count==0:
             word=word.replace(char,"-" , 1)
             print(list2)
-            print(f"congratulations you won!!!")
+            print("congratulations you won!!!")
             break
     else :
         # print("wrong guess , try again")
